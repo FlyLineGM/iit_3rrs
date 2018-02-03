@@ -1,0 +1,10 @@
+objects = main.o scanner.o swz_len.o swz_3rrs.o 
+deps = scanner.h swz_len.h swz_3rrs.h
+
+out:$(objects) $(deps)
+	g++ -fopenmp -o out $(objects) $(deps) -Wall -pg
+
+%.o : %.cpp inertiamodel_3rrs.h -pg
+
+clean:
+	-rm $(objects)
