@@ -1,1 +1,4 @@
-# iit_3rrs
+# Design of 3RRS parallel manipulator
+
+
+NSGA-2 was used to find the optimal solution by minimizing maximum torque within a workspace that is free of singularities and joint intersections (Safe Working Zone)
